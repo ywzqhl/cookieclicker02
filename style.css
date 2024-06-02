@@ -1,4 +1,4 @@
-﻿/* reset CSS */
+/* reset CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,6 +23,34 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*=====================================================================================
+BASE
+=======================================================================================*/
+html,body
+{
+	width:100%;
+	height:100%;
 }
 
 body
@@ -538,34 +566,7 @@ div:hover>.hoverable
 	bottom:0px;
 	overflow:hidden;
 }
-/* Modify sections for vertical display on mobile */
-@media (max-width: 768px) {
-    #game {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        overflow-y: auto;
-        padding: 10px;
-    }
-
-    #sectionLeft, #sectionMiddle, #sectionRight {
-        position: relative;
-        width: 100%; /* Full width */
-        margin: 10px 0;
-        overflow: visible; /* Ensure contents are not cut off */
-        min-height: 300px; /* Ensure minimum height */
-    }
-
-    .separatorLeft, .separatorRight {
-        display: none;
-    }
-
-    #centerArea {
-        overflow-y: visible; /* Make sure center area is not hidden */
-    }
-}
-/*
-#sectionLef
+#sectionLeft
 {
 	position:absolute;
 	left:0px;
@@ -574,9 +575,8 @@ div:hover>.hoverable
 	bottom:0px;
 	min-width:100px;
 	/*overflow:hidden;*/
-}*/
+}
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
-/*
 #sectionMiddle
 {
 	position:absolute;
@@ -588,7 +588,7 @@ div:hover>.hoverable
 	bottom:0px;
 	min-width:100px;
 	overflow:hidden;
-}*/
+}
 #centerArea
 {
 	overflow-x:hidden;
@@ -606,7 +606,6 @@ div:hover>.hoverable
 	background-size:100% 100%,auto;
 	background-color:#000;
 }
-/*
 #sectionRight
 {
 	height:100%;
@@ -617,7 +616,8 @@ div:hover>.hoverable
 	overflow-y:scroll;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
-}*/
+}
+
 #sectionLeft .blackGradient
 {
 	background:url(img/blackGradient.png) repeat-x bottom;
@@ -3168,90 +3168,3 @@ MOBILE
 {display:block;}
 
 /**{overflow:hidden!important;}*/
-/* Add this CSS at the end of your existing style.css file */
-
-/* Base styles for the entire page */
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Merriweather', serif;
-    background-color: #000;
-    color: #fff;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-#wrapper {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-#game {
-    width: 100%;
-}
-
-#topBar {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-#topBar div {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    #game {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #sectionLeft, #sectionMiddle, #sectionRight {
-        position: relative;
-        width: 100%; /* Full width */
-        min-width: 0;
-        margin: 10px 0;
-        overflow: auto; /* Scrollable content if it overflows */
-        min-height: 300px; /* Adjust as necessary */
-        box-sizing: border-box;
-    }
-
-    #sectionLeft {
-        order: 1;
-    }
-
-    #sectionMiddle {
-        order: 2;
-    }
-
-    #sectionRight {
-        order: 3;
-    }
-
-    .separatorLeft, .separatorRight {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    #wrapper {
-        padding: 0 5px;
-    }
-
-    #topBar div {
-        font-size: 0.9em;
-    }
-}
