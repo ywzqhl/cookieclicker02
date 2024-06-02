@@ -3184,10 +3184,11 @@ MOBILE
 
     #sectionLeft, #sectionMiddle, #sectionRight {
         position: relative;
-        width: 90%; /* Adjust the width as needed */
+        width: 100%; /* Take full width */
         min-width: 0;
         margin: 10px 0;
         overflow: visible; /* Ensure contents are not cut off */
+        min-height: 300px; /* Increase minimum height */
     }
 
     .separatorLeft, .separatorRight {
