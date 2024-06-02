@@ -3168,3 +3168,534 @@ MOBILE
 {display:block;}
 
 /**{overflow:hidden!important;}*/
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Base styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    background: #000 url(img/darkNoise.jpg);
+    font-size: 13px;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#topBar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#topBar div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#game {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles for vertical layout */
+#sectionLeft, #sectionMiddle, #sectionRight {
+    width: 100%;
+    min-height: 300px; /* Adjust the height as needed */
+    margin: 10px 0;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    #game {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sectionLeft, #sectionMiddle, #sectionRight {
+        width: 100%; /* Full width for each section */
+        margin: 10px 0;
+    }
+
+    .separatorLeft, .separatorRight {
+        display: none;
+    }
+}
+
+/* Existing styles from the provided content */
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    
+    color:#fff;
+    background:#000 url(img/darkNoise.jpg);
+    font-family:Tahoma,Arial,sans-serif;
+    font-size:13px;
+}
+
+.selectable {
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+#wrapper {
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+}
+
+small {
+    font-size:80%;
+}
+
+a, a:visited {
+    text-decoration:underline;
+    cursor:pointer;
+    color:#ccc;
+}
+a:hover {
+    text-shadow:0px 0px 3px #fff;
+    color:#fff;
+}
+a:active {
+    opacity:0.8;
+    background:transparent;
+}
+
+.inset {
+    /*box-shadow:0px 0px 12px #000 inset;*/
+}
+
+.titleFont, .title, .section, .lockedTitle {
+    font-family: 'Merriweather', Georgia, serif;
+}
+.title, .section, .lockedTitle {
+    font-size:28px;
+    text-shadow:0px 0px 4px #000;
+    color:#fff;
+}
+
+.section {
+    text-align:center;
+    padding:0px 16px;
+    background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.5),rgba(0,0,0,0),rgba(0,0,0,0));
+    margin:12px 0px;
+}
+.section:after {
+    content:'';
+    display:block;
+    background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0),rgba(255,255,255,0));
+    height:1px;
+    margin:6px 0px;
+}
+.section:before {
+    content:'';
+    display:block;
+    background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0),rgba(255,255,255,0));
+    height:1px;
+    margin:6px 0px;
+}
+.subsection {
+    padding:8px 0px;
+    font-size:14px;
+}
+.subsection div.title {
+    font-size:22px;
+    padding-left:16px;
+    margin-bottom:8px;
+    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0));
+}
+.subsection div.title:after {
+    content:'';
+    display:block;
+    background:linear-gradient(to right,rgba(255,255,255,0.25),rgba(255,255,255,0));
+    height:1px;
+    width:50%;
+    margin:6px 0px;
+    margin-left:-16px;
+}
+.subsection div.title:before {
+    content:'';
+    display:block;
+    background:linear-gradient(to right,rgba(255,255,255,0.25),rgba(255,255,255,0));
+    height:1px;
+    width:50%;
+    margin:6px 0px;
+    margin-left:-16px;
+}
+.update {
+    -webkit-touch-callout: auto;
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+.update .title {
+    color:#69c;
+}
+.update.small .title {
+    font-size:16px;
+    opacity:0.8;
+    color:#fff;
+}
+.listing {
+    padding:3px 16px;
+    font-size:13px;
+}
+.listing b {
+    font-weight:bold;
+    opacity:0.6;
+}
+.listing small {
+    font-size:11px;
+    opacity:0.9;
+}
+.listing label {
+    font-size:12px;
+    border-bottom:1px solid rgba(255,255,255,0.25);
+    border-right:1px solid rgba(255,255,255,0.25);
+    opacity:0.5;
+    padding-left:16px;
+    padding-bottom:2px;
+    padding-right:4px;
+    position:relative;
+    left:-4px;
+    top:-2px;
+    background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.5));
+}
+
+.hidden {
+    visibility:hidden;
+}
+.toggledOff {
+    opacity:0;
+    display:none;
+}
+.listing:hover .hidden {
+    visibility:visible;
+}
+
+.optionBox {
+    text-align:center;
+    clear:both;
+    margin-bottom:-12px;
+}
+.optionBox .option {
+}
+a.option.big {
+    font-size:30px;
+    margin:auto;
+    padding:8px 16px;
+    width:80%;
+}
+a.option.framed.large small {font-size:65%;}
+a.option.framed.large {
+    font-size:20px;
+    margin:4px auto;
+    padding:6px 12px;
+    background:#058;
+    box-shadow:0px 0px 1px 2px rgba(0,0,0,0.5),0px 2px 4px rgba(0,0,0,0.25),0px 1px 1px 1px rgba(0,0,0,0.5) inset,0px 0px 12px 2px #0cf inset;
+    text-shadow:0px 1px 2px #000;
+}
+
+/* Add this style to make sections visible on small screens */
+@media (max-width: 768px) {
+    #game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sectionLeft, #sectionMiddle, #sectionRight {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        margin: 10px 0;
+        overflow: visible;
+        min-height: 300px; /* Increase minimum height */
+    }
+
+    .separatorLeft, .separatorRight {
+        display: none;
+    }
+}
+
+/* Additional provided styles */
+
+#sectionLeft, #sectionMiddle, #sectionRight {
+    position: relative;
+    width: 30%;
+    bottom: 0px;
+    min-width: 100px;
+    overflow: hidden;
+}
+
+/* Styles for various elements */
+#comments {
+    padding:16px;
+    text-align:center;
+    position:relative;
+    padding-bottom:32px;
+    font-size:16px;
+    height:64px;
+    background:url(img/shadedBorders.png);
+    background-size:100% 96px;
+}
+.commentsText {
+    padding:16px 0px;
+    position:absolute;
+    top:0px;
+    left:108px;
+    right:108px;
+    opacity:1;
+    text-align:center;
+}
+.commentsText q {
+    font-style:italic;
+}
+.commentsText sig {
+    font-size:70%;
+    display:block;
+    text-align:center;
+    opacity:0.7;
+}
+.commentsText sig:before {
+    content:"-";
+    padding-left:64px;
+}
+.fortune {
+    color:#ade000;
+    cursor:pointer;
+}
+.fortune:hover {
+    color:#d2ff00;
+    text-shadow:0px 0px 4px #ade000;
+}
+
+#commentsText {
+    z-index:20;
+}
+#commentsTextBelow {
+    z-index:10;
+}
+
+/* Other existing styles */
+
+/* Add this style to make sections visible on small screens */
+@media (max-width: 768px) {
+    #game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sectionLeft, #sectionMiddle, #sectionRight {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        margin: 10px 0;
+        overflow: visible;
+        min-height: 300px; /* Increase minimum height */
+    }
+
+    .separatorLeft, .separatorRight {
+        display: none;
+    }
+}
+
+/* Final sections */
+#specialPopup {
+    position:absolute;
+    left:50%;
+    margin-left:-185px;
+    bottom:32px;
+    width:350px;
+    min-height:8px;
+    z-index:20000;
+    transition:bottom 0.2s ease-out,opacity 0.1s ease-out;
+    text-align:center;
+}
+#specialPopup.onScreen {
+    bottom:32px;
+    opacity:1;
+}
+#specialPopup.offScreen {
+    bottom:-32px;
+    pointer-events:none;
+    opacity:0;
+}
+
+.separatorLeft, .separatorRight {
+    width:16px;
+    height:100%;
+    background:url(img/panelVertical.png?v=2) repeat-y;
+    background:url(img/panelGradientTop.png) no-repeat top left,url(img/panelGradientBottom.png) no-repeat bottom left,url(img/panelVertical.png?v=2) repeat-y;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    z-index:100;
+}
+.separatorLeft {
+    left:30%;
+}
+.separatorRight {
+    right:317px;
+}
+.separatorBottom {
+    width:100%;
+    height:16px;
+    background:url(img/panelHorizontal.png?v=2) repeat-x;
+    background:url(img/panelGradientLeft.png) no-repeat top left,url(img/panelGradientRight.png) no-repeat top right,url(img/panelHorizontal.png?v=2) repeat-x;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+}
+
+.button {
+    background:url(img/panelMenu3.png);
+    background-position:0px 0px;
+    position:absolute;
+    z-index:100;
+    width:100px;
+    height:48px;
+    text-align:center;
+    font-size:18px;
+    cursor:pointer;
+    
+    box-sizing:border-box;
+    padding-top:16px;
+    
+    color:#999;
+    text-shadow:0px 1px 0px #444,0px 0px 4px #000;
+}
+.button:hover, .button.selected {
+    z-index:1000;
+    color:#fff;
+    text-shadow:0px 1px 0px #999,0px 0px 4px #000;
+}
+#prefsButton {
+    top:0px;
+    left:0px;
+    padding-top:16px;
+    padding-right:2px;
+    background-position:0px 0px;
+}
+#statsButton {
+    bottom:16px;
+    left:0px;
+    padding-top:14px;
+    padding-right:2px;
+    background-position:0px -48px;
+}
+#logButton {
+    top:0px;
+    right:0px;
+    padding-top:16px;
+    padding-left:2px;
+    background-position:-100px 0px;
+}
+#legacyButton {
+    bottom:16px;
+    right:0px;
+    padding-top:14px;
+    padding-left:2px;
+    background-position:-100px -48px;
+}
+#prefsButton:hover, #prefsButton.selected {
+    background-position:0px -96px;
+}
+#statsButton:hover, #statsButton.selected {
+    background-position:0px -144px;
+}
+#logButton:hover, #logButton.selected {
+    background-position:-100px -96px;
+}
+#legacyButton:hover, #legacyButton.selected {
+    background-position:-100px -144px;
+}
+
+/* Other existing styles */
+
+#sectionLeft .blackGradient {
+    background:url(img/blackGradient.png) repeat-x bottom;
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:300px;
+    height:640px;
+}
+#sectionLeft .blackFiller {
+    background:#000;
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:940px;
+    bottom:0px;
+}
