@@ -3602,3 +3602,50 @@ a.option.framed.large {
     top: 940px;
     bottom: 0px;
 }
+
+/* Styles to make the page responsive */
+
+@media (max-width: 768px) {
+    #game {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sectionLeft, #sectionMiddle, #sectionRight {
+        display: none; /* Hide sections by default on mobile */
+    }
+
+    .separatorLeft, .separatorRight {
+        display: none;
+    }
+
+    #controls {
+        display: block; /* Show controls on mobile */
+    }
+
+    #sectionLeft.show, #sectionMiddle.show, #sectionRight.show {
+        display: block; /* Show only the active section */
+    }
+}
+
+/* Styles for buttons */
+#controls {
+    text-align: center;
+    margin: 10px 0;
+    display: none; /* Hide by default, will show on mobile */
+}
+
+#controls button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#controls button:hover {
+    background-color: #555;
+}
+
