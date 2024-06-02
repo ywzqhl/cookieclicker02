@@ -3168,3 +3168,143 @@ MOBILE
 {display:block;}
 
 /**{overflow:hidden!important;}*/
+/* 全局样式重置 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #000 url(img/darkNoise.jpg);
+    font-family: Tahoma, Arial, sans-serif;
+    color: #fff;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 三部分布局 */
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+main > div {
+    flex: 1;
+}
+
+/* 顶部栏样式 */
+#topBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #222;
+    color: #ccc;
+}
+
+#topBar div {
+    margin: 5px 10px;
+}
+
+#topBar a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+#topBar a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+#topBar a.blueLink {
+    color: #06c;
+}
+
+#topBar a.blueLink:hover {
+    color: #28f;
+    text-shadow: 0px 0px 3px #06c;
+}
+
+#topBar a.lightblueLink {
+    color: #6ad3ff;
+}
+
+#topBar a.lightblueLink:hover {
+    color: #74fffd;
+    text-shadow: 0px 0px 3px #6ad3ff;
+}
+
+a.orangeLink, #topBar a.orangeLink {
+    color: #f65f4d;
+}
+
+a.orangeLink:hover, #topBar a.orangeLink:hover {
+    color: #ff9580;
+    text-shadow: 0px 0px 3px #f65f4d;
+}
+
+/* 底部栏样式 */
+footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
