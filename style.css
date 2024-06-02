@@ -3279,6 +3279,10 @@ html, body {
     #controls {
         display: block; /* Show controls on mobile */
     }
+
+    #sectionLeft.show, #sectionMiddle.show, #sectionRight.show {
+        display: block; /* Show only the active section */
+    }
 }
 
 /* Additional existing styles */
@@ -3648,4 +3652,5 @@ a.option.framed.large {
 #controls button:hover {
     background-color: #555;
 }
+
 
