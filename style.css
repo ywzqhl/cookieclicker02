@@ -24,34 +24,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-/*=====================================================================================
-BASE
-=======================================================================================*/
-html,body
-{
-	width:100%;
-	height:100%;
-}
 
 body
 {
@@ -565,6 +537,32 @@ div:hover>.hoverable
 	right:0px;
 	bottom:0px;
 	overflow:hidden;
+}
+/* Modify sections for vertical display on mobile */
+@media (max-width: 768px) {
+    #game {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        overflow-y: auto;
+        padding: 10px;
+    }
+
+    #sectionLeft, #sectionMiddle, #sectionRight {
+        position: relative;
+        width: 100%; /* Full width */
+        margin: 10px 0;
+        overflow: visible; /* Ensure contents are not cut off */
+        min-height: 300px; /* Ensure minimum height */
+    }
+
+    .separatorLeft, .separatorRight {
+        display: none;
+    }
+
+    #centerArea {
+        overflow-y: visible; /* Make sure center area is not hidden */
+    }
 }
 /*
 #sectionLef
