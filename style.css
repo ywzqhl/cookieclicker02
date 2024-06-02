@@ -566,6 +566,7 @@ div:hover>.hoverable
 	bottom:0px;
 	overflow:hidden;
 }
+/*
 #sectionLef
 {
 	position:absolute;
@@ -575,8 +576,9 @@ div:hover>.hoverable
 	bottom:0px;
 	min-width:100px;
 	/*overflow:hidden;*/
-}
+}*/
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
+/*
 #sectionMiddle
 {
 	position:absolute;
@@ -588,7 +590,7 @@ div:hover>.hoverable
 	bottom:0px;
 	min-width:100px;
 	overflow:hidden;
-}
+}*/
 #centerArea
 {
 	overflow-x:hidden;
@@ -617,7 +619,7 @@ div:hover>.hoverable
 	overflow-y:scroll;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
-}
+}*/
 #sectionLeft .blackGradient
 {
 	background:url(img/blackGradient.png) repeat-x bottom;
