@@ -3168,3 +3168,90 @@ MOBILE
 {display:block;}
 
 /**{overflow:hidden!important;}*/
+/* Add this CSS at the end of your existing style.css file */
+
+/* Base styles for the entire page */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#game {
+    width: 100%;
+}
+
+#topBar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#topBar div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sectionLeft, #sectionMiddle, #sectionRight {
+        position: relative;
+        width: 100%; /* Full width */
+        min-width: 0;
+        margin: 10px 0;
+        overflow: auto; /* Scrollable content if it overflows */
+        min-height: 300px; /* Adjust as necessary */
+        box-sizing: border-box;
+    }
+
+    #sectionLeft {
+        order: 1;
+    }
+
+    #sectionMiddle {
+        order: 2;
+    }
+
+    #sectionRight {
+        order: 3;
+    }
+
+    .separatorLeft, .separatorRight {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #wrapper {
+        padding: 0 5px;
+    }
+
+    #topBar div {
+        font-size: 0.9em;
+    }
+}
