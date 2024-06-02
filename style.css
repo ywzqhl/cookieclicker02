@@ -3252,6 +3252,7 @@ html, body {
 #controls {
     text-align: center;
     margin: 10px 0;
+    display: none; /* Hide by default, will show on mobile */
 }
 
 #sectionLeft, #sectionMiddle, #sectionRight {
@@ -3273,6 +3274,10 @@ html, body {
 
     .separatorLeft, .separatorRight {
         display: none;
+    }
+
+    #controls {
+        display: block; /* Show controls on mobile */
     }
 }
 
@@ -3597,4 +3602,5 @@ a.option.framed.large {
     top: 940px;
     bottom: 0px;
 }
+
 
