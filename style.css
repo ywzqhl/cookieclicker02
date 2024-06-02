@@ -3168,3 +3168,22 @@ MOBILE
 {display:block;}
 
 /**{overflow:hidden!important;}*/
+/* Add these styles at the bottom of your existing CSS file */
+
+@media (max-width: 768px) {
+    #game {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sectionLeft, #sectionMiddle, #sectionRight {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        margin: 10px 0;
+    }
+
+    .separatorLeft, .separatorRight {
+        display: none;
+    }
+}
