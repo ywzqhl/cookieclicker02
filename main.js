@@ -14483,12 +14483,3 @@ window.onload=function()
 		//catch(err) {console.log('ERROR : '+err.message);}
 	}
 };
-
-window.addEventListener('resize', function() {
-    var gameContainer = document.querySelector('.game-container');
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-
-    gameContainer.style.width = width > 1200 ? '80%' : '100%';
-    gameContainer.style.height = height > 800 ? '80%' : '100%';
-});
