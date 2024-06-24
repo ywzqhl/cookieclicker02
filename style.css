@@ -592,6 +592,7 @@ div:hover>.hoverable
 	bottom:0px;
 	min-width:100px;
 	overflow:hidden;
+	display: block;
 }
 #centerArea
 {
@@ -620,6 +621,7 @@ div:hover>.hoverable
 	overflow-y:scroll;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
+	display: block;
 }
 
 #sectionLeft .blackGradient
