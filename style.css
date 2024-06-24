@@ -572,9 +572,9 @@ div:hover>.hoverable
 {
 	position:absolute;
 
-	top:0px;
+
 	left:33%;
-width:33%;
+width:45%;
 	min-width:100px;
 	/*overflow:hidden;*/
 flex: 0 0 33%;
