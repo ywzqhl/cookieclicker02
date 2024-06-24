@@ -617,14 +617,12 @@ text-align: center;
 {
 	height:100%;
 	position:absolute;
-	left:33%;
-	width:45%;
+	top:0px;
+	right:0px;
 	overflow-x:hidden;
 	overflow-y:scroll;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
-flex: 0 0 45%;
-text-align: center;
 }
 
 #sectionLeft .blackGradient
