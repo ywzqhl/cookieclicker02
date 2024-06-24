@@ -569,6 +569,8 @@ div:hover>.hoverable
 	justify-content: center;
 	align-items: center
 	flex-wrap: wrap;
+	overflow-x:hidden;
+	overflow-y:scroll;
 }
 #sectionLeft
 {
