@@ -574,7 +574,7 @@ div:hover>.hoverable
 
 	top:0px;
 	left:33%;
-
+width:33%;
 	min-width:100px;
 	/*overflow:hidden;*/
 flex: 0 0 33%;
@@ -587,7 +587,7 @@ text-align: center;
 	left:33%;
 	padding-left:16px;
 	margin-right:15px;
-
+	width:40%;
 
 	min-width:100px;
 	overflow:hidden;
@@ -616,7 +616,7 @@ text-align: center;
 	height:100%;
 	position:absolute;
 	left:33%;
-
+	width:45%;
 	overflow-x:hidden;
 	overflow-y:scroll;
 	/*background:url(img/panelBG.png);*/
