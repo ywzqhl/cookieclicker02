@@ -578,6 +578,7 @@ div:hover>.hoverable
 	min-width:100px;
 	/*overflow:hidden;*/
 flex: 0 0 33%;
+text-align: center;
 }
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
@@ -586,12 +587,12 @@ flex: 0 0 33%;
 
 	padding-left:16px;
 	margin-right:15px;
-	top:0px;
 
 	bottom:0px;
 	min-width:100px;
 	overflow:hidden;
 flex: 0 0 33%;
+text-align: center;
 }
 #centerArea
 {
@@ -614,13 +615,14 @@ flex: 0 0 33%;
 {
 	height:100%;
 	position:absolute;
-	top:0px;
+
 
 	overflow-x:hidden;
 	overflow-y:scroll;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
 flex: 0 0 33%;
+text-align: center;
 }
 
 #sectionLeft .blackGradient
