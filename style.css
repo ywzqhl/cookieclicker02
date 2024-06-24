@@ -569,7 +569,7 @@ div:hover>.hoverable
 #sectionLeft
 {
 	position:absolute;
-	left:0px;
+	left:30%;
 	top:0px;
 	width:30%;
 	bottom:0px;
