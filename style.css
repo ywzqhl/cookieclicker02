@@ -593,7 +593,9 @@ div:hover>.hoverable
 	right:318px;
 
 	min-width:100px;
-
+	display: flex;
+	justify-content: center;
+	align-items: center
 	display: block;
 }
 #centerArea
