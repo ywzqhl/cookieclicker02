@@ -584,15 +584,14 @@ div:hover>.hoverable
 #sectionMiddle
 {
 	position:absolute;
-	left:33%;
+	left:30%;
 	padding-left:16px;
 	margin-right:15px;
-	width:40%;
-
+	top:0px;
+	right:318px;
+	bottom:0px;
 	min-width:100px;
 	overflow:hidden;
-flex: 0 0 40%;
-
 }
 #centerArea
 {
