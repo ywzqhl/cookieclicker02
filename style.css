@@ -563,8 +563,6 @@ div:hover>.hoverable
 	left:0px;
 	top:0px;
 	right:0px;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
         height:auto;
 	overflow:hidden;
 
