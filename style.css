@@ -618,7 +618,7 @@ div:hover>.hoverable
 	bottom:0px;
 	overflow:hidden;
 	display: inline-block;
-	overflow-y:scroll;
+	overflow-y:auto;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
 	display: inline-block;
