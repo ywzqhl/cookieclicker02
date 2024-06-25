@@ -579,7 +579,7 @@ display: flex;
 	width:34%;
 
 	min-width:100px;
-	/*overflow:hidden;*/
+	overflow:hidden;
 display: flex;
   justify-content: center;
   align-items: center;
