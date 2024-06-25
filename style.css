@@ -560,7 +560,9 @@ div:hover>.hoverable
 #game
 {
 	position:absolute;
-
+	left:0px;
+	top:0px;
+	right:0px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
         height:100vh;
