@@ -614,18 +614,17 @@ div:hover>.hoverable
 }
 #sectionRight
 {
-	height:100%;
 	position:absolute;
-	left:30%;
+	left:390px;
 	top:720px;
 	width:390px;
 	bottom:0px;
 	overflow:hidden;
 	display: inline-block;
+	overflow-x:hidden;
 	overflow-y:auto;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
-	display: inline-block;
 }
 
 #sectionLeft .blackGradient
