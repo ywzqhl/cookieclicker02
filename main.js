@@ -14483,3 +14483,17 @@ window.onload=function()
 		//catch(err) {console.log('ERROR : '+err.message);}
 	}
 };
+
+// 获取按钮和中间部分的引用
+const showMiddleButton = document.getElementById('showMiddleButton');
+const sectionMiddle = document.getElementById('sectionMiddle');
+
+// 添加按钮点击事件监听器
+showMiddleButton.addEventListener('click', function() {
+  // 切换中间部分的显示状态
+  if (sectionMiddle.style.display === 'none') {
+    sectionMiddle.style.display = 'flex';
+  } else {
+    sectionMiddle.style.display = 'none';
+  }
+});
