@@ -569,7 +569,7 @@ div:hover>.hoverable
 	right:0px;
 	bottom:0px;
 	overflow:hidden;
-	height:auto;
+	height:1440px;
   display: grid;
   grid-template-rows: auto; /* 自动增加行高度 */
 }
