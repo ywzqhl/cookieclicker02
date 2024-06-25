@@ -572,7 +572,7 @@ div:hover>.hoverable
 #sectionLeft
 {
 	position:absolute;
-	left:0px;
+	left:30%;
 	top:0px;
 	width:390px;
 	bottom:0px;
@@ -621,6 +621,7 @@ div:hover>.hoverable
 	overflow-y:scroll;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
+	display: inline-block;
 }
 
 #sectionLeft .blackGradient
