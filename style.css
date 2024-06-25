@@ -586,14 +586,15 @@ display: flex;
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
 {
-
-
-	top:720px;
-
-	height:720px;
+	position:absolute;
+	left:30%;
+	padding-left:16px;
+	margin-right:15px;
+	top:0px;
+	right:318px;
+	bottom:0px;
 	min-width:100px;
 	overflow:hidden;
-
 }
 #centerArea
 {
