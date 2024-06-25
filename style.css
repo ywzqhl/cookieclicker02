@@ -576,9 +576,7 @@ div:hover>.hoverable
 	width:100%;
 	bottom:0px;
 	min-width:100px;
-display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
