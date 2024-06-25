@@ -579,7 +579,6 @@ div:hover>.hoverable
 	width:720px;
 	overflow:hidden;
 	display: flex;
-	flex-direction: column;
 }
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
@@ -593,6 +592,7 @@ div:hover>.hoverable
 	bottom:0px;
 	min-width:100px;
 	overflow:hidden;
+	display: inline-block
 }
 #centerArea
 {
