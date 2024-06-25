@@ -593,9 +593,7 @@ display: flex;
 	height:720px;
 	min-width:100px;
 	overflow:hidden;
-display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 #centerArea
 {
