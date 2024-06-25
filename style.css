@@ -574,8 +574,8 @@ display: flex;
 {
 	position:absolute;
 	top:0px;
-	height:34%;
-	width:30%;
+	height:720px;
+	width:34%;
 	bottom:0px;
 	min-width:100px;
 	/*overflow:hidden;*/
