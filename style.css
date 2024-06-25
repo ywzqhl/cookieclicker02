@@ -3178,3 +3178,8 @@ MOBILE
 {display:block;}
 
 /**{overflow:hidden!important;}*/
+.game::after {
+  content: "";
+  display: table;
+  clear: both;
+}
