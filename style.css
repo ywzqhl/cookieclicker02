@@ -561,8 +561,9 @@ div:hover>.hoverable
 {
 height:auto;
 	overflow:hidden;
-  display: flex;
-  flex-direction: row;
+display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #sectionLeft
 {
