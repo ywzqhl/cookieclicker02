@@ -561,6 +561,7 @@ div:hover>.hoverable
 #game
 {
 	position:absolute;
+	left:0px;
 	top:0px;
 	overflow:hidden;
 	display: flex;
