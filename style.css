@@ -573,12 +573,12 @@ display: flex;
 }
 #sectionLeft
 {
-	left:34%;
+	position:absolute;
+	left:0px;
 	top:0px;
-	width:34%;
-
+	width:30%;
+	bottom:0px;
 	min-width:100px;
-	overflow:hidden;
 display: flex;
   justify-content: center;
   align-items: center;
