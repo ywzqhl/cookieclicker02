@@ -559,10 +559,10 @@ div:hover>.hoverable
 
 #game
 {
-
+height:auto;
 	overflow:hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 #sectionLeft
 {
