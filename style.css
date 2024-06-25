@@ -565,7 +565,7 @@ div:hover>.hoverable
 	right:0px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-        height:100vh;
+        height:auto;
 	overflow:hidden;
 display: flex;
   justify-content: center;
