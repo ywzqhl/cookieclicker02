@@ -566,8 +566,7 @@ div:hover>.hoverable
 	bottom:0px;
 	overflow:hidden;
 	height:2160px;
-	display: flex;
-	flex-direction: column;
+
 }
 #sectionLeft
 {
@@ -579,7 +578,6 @@ div:hover>.hoverable
 	width:720px;
 	overflow:hidden;
 	display: inline-block;
-	
 }
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
