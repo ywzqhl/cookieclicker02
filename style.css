@@ -570,8 +570,8 @@ div:hover>.hoverable
 	bottom:0px;
 	overflow:hidden;
 	height:auto;
-	display: flex;
-	flex-direction: column;
+  display: grid;
+  grid-template-rows: auto; /* 自动增加行高度 */
 }
 #sectionLeft
 {
