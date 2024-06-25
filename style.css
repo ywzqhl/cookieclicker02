@@ -560,9 +560,7 @@ div:hover>.hoverable
 #game
 {
 	position:absolute;
-	left:0px;
-	top:0px;
-	right:0px;
+
 
         height:2160px;
 	overflow:hidden;
