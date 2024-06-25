@@ -576,6 +576,12 @@ div:hover>.hoverable
 	min-width:100px;
 	/*overflow:hidden;*/
 }
+#showMiddleButton
+{
+	position:absolute;
+	left:180px;
+	top:560px;
+}
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
 {
