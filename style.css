@@ -567,9 +567,8 @@ display: flex;
 }
 #sectionLeft
 {
-	left:50%;
+	left:34%;
 	top:0px;
-	width:30%;
 	width:34%;
 
 	min-width:100px;
