@@ -564,7 +564,7 @@ div:hover>.hoverable
 	top:0px;
 	right:0px;
 
-        height:2160px;
+        height:100vh;
 	overflow:hidden;
 display: flex;
   justify-content: center;
