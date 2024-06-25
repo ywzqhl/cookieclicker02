@@ -565,7 +565,7 @@ div:hover>.hoverable
 	top:0px;
 	right:0px;
 	bottom:0px;
-	overflow:auto;
+	overflow:scroll;
 	display: flex;
 	flex-direction: column;
 }
