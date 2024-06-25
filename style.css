@@ -565,7 +565,8 @@ div:hover>.hoverable
 	right:0px;
         height:auto;
 	overflow:hidden;
-
+  display: flex;
+  flex-direction: column;
 }
 #sectionLeft
 {
