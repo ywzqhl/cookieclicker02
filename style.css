@@ -594,7 +594,7 @@ div:hover>.hoverable
 #centerArea
 {
 	overflow-x:hidden;
-	overflow-y:scroll;
+	overflow-y:auto;
 	position:absolute;
 	top:112px;
 	left:16px;
