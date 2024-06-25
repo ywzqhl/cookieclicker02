@@ -586,9 +586,8 @@ div:hover>.hoverable
 	position:absolute;
 	left:30%;
 	top:720px;
-	right:318px;
+	weight:390px;
 	bottom:0px;
-	min-width:100px;
 	overflow:hidden;
 	display: inline-block;
 }
