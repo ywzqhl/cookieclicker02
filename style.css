@@ -562,7 +562,7 @@ div:hover>.hoverable
   display: flex;
   flex-direction: column;
   height: 100vh; /* 使用视口高度作为整体高度 */
-  overflow: hidden; /* 隐藏溢出内容 */
+
 	display: flex;
 	justify-content: center;
 	align-items: center
