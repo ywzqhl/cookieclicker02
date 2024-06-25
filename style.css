@@ -576,7 +576,7 @@ div:hover>.hoverable
 	top:0px;
 	width:390px;
 	bottom:0px;
-	min-width:100px;
+	width:720px;
 	overflow:hidden;
 	display: flex;
 	flex-direction: column;
