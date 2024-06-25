@@ -623,6 +623,7 @@ div:hover>.hoverable
 	overflow-y:auto;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
+	display: inline-block;
 }
 
 #sectionLeft .blackGradient
