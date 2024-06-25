@@ -576,19 +576,12 @@ display: flex;
 	top:0px;
 	height:720px;
 	width:34%;
-	bottom:0px;
+
 	min-width:100px;
 	/*overflow:hidden;*/
 display: flex;
   justify-content: center;
   align-items: center;
-}
-#showMiddleButton
-{
-	position:absolute;
-	left:180px;
-	top:360px;
-	color:#red;
 }
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
