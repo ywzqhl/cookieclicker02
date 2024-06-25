@@ -580,7 +580,8 @@ div:hover>.hoverable
 {
 	position:absolute;
 	left:180px;
-	top:560px;
+	top:360px;
+	color:#red;
 }
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
