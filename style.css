@@ -612,9 +612,12 @@ div:hover>.hoverable
 {
 	height:100%;
 	position:absolute;
-	top:0px;
-	right:0px;
-	overflow-x:hidden;
+	left:30%;
+	top:14400px;
+	width:390px;
+	bottom:0px;
+	overflow:hidden;
+	display: inline-block;
 	overflow-y:scroll;
 	/*background:url(img/panelBG.png);*/
 	background:rgba(0,0,0,0.5);
