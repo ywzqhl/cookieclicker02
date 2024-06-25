@@ -572,20 +572,26 @@ div:hover>.hoverable
 }
 #sectionLeft
 {
-  flex: 1; /* 上部分占据整体高度的1/3 */
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: flex-start; /* 顶部对齐 */
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:30%;
+	bottom:0px;
+	min-width:100px;
 	/*overflow:hidden;*/
 }
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
 {
-  flex: 1; /* 中间部分占据整体高度的1/3 */
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-  background: rgba(0, 255, 0, 0.5); /* 临时背景颜色 */
+	position:absolute;
+	left:30%;
+	padding-left:16px;
+	margin-right:15px;
+	top:7200px;
+	right:318px;
+	bottom:0px;
+	min-width:100px;
+	overflow:hidden;
 }
 #centerArea
 {
@@ -606,10 +612,14 @@ div:hover>.hoverable
 }
 #sectionRight
 {
-  flex: 1; /* 下部分占据整体高度的1/3 */
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: flex-end; /* 底部对齐 */
+	height:100%;
+	position:absolute;
+	top:0px;
+	right:0px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	/*background:url(img/panelBG.png);*/
+	background:rgba(0,0,0,0.5);
 }
 
 #sectionLeft .blackGradient
