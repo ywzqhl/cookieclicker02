@@ -578,7 +578,8 @@ div:hover>.hoverable
 	bottom:0px;
 	width:720px;
 	overflow:hidden;
-	display: flex;
+	display: inline-block;
+	
 }
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
