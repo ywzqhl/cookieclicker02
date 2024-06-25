@@ -588,7 +588,7 @@ div:hover>.hoverable
 #sectionMiddle
 {
 	position:absolute;
-	left:390px
+	left:390px;
 	top:0px;
 	width:430px;
 	bottom:0px;
