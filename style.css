@@ -561,7 +561,7 @@ div:hover>.hoverable
 #game
 {
 	position:absolute;
-
+	top:0px;
 	overflow:hidden;
 	display: flex;
 	justify-content: center;
