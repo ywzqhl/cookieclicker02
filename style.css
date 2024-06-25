@@ -563,20 +563,22 @@ div:hover>.hoverable
 	left:0px;
 	top:0px;
 	right:0px;
-	bottom:0px;
+
         height:2160px;
 	overflow:hidden;
 }
 #sectionLeft
 {
 	position:absolute;
-	left:0px;
 	top:0px;
 	height:34%;
 	width:30%;
 	bottom:0px;
 	min-width:100px;
 	/*overflow:hidden;*/
+display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #showMiddleButton
 {
