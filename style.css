@@ -560,7 +560,7 @@ div:hover>.hoverable
 
 #game
 {
-	position:relative;
+	position: absolute;
 	left:0px;
 	top:0px;
 	right:0px;
@@ -574,7 +574,7 @@ div:hover>.hoverable
 	position:absolute;
 	left:0px;
 	top:0px;
-	width:100%;
+	width:390px;
 	bottom:0px;
 	min-width:100px;
 
