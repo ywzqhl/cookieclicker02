@@ -571,6 +571,7 @@ div:hover>.hoverable
 	position:absolute;
 	left:0px;
 	top:0px;
+	height:720px;
 	width:30%;
 	bottom:0px;
 	min-width:100px;
@@ -592,7 +593,7 @@ div:hover>.hoverable
 	margin-right:15px;
 	top:720px;
 	right:428px;
-	bottom:0px;
+	height:720px;
 	min-width:100px;
 	overflow:hidden;
 }
