@@ -592,7 +592,7 @@ div:hover>.hoverable
 	bottom:0px;
 	min-width:100px;
 	overflow:hidden;
-	display: inline-block
+	display: inline-block;
 }
 #centerArea
 {
