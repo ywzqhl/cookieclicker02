@@ -587,6 +587,7 @@ div:hover>.hoverable
 {
 	position:absolute;
 	left:30%;
+	top:720px
 	padding-left:16px;
 	margin-right:15px;
 
@@ -596,7 +597,7 @@ div:hover>.hoverable
 	display: flex;
 	justify-content: center;
 	align-items: center
-	display: block;
+	display: inline-block;
 }
 #centerArea
 {
