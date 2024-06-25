@@ -51,8 +51,6 @@ html,body
 {
 	width:100%;
 	height:100%;
-	overflow:hidden;
-	height:auto;
 }
 
 body
@@ -91,8 +89,6 @@ body
 	right:0px;
 	bottom:0px;
 	/*min-width:1280px;*/
-	overflow:hidden;
-	height:auto;
 }
 
 small
