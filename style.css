@@ -559,16 +559,14 @@ div:hover>.hoverable
 
 #game
 {
-	position:absolute;
-	left:0px;
-	top:0px;
-	right:0px;
-	bottom:0px;
-	overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 使用视口高度作为整体高度 */
+  overflow: hidden; /* 隐藏溢出内容 */
 	display: flex;
 	justify-content: center;
 	align-items: center
-	flex-wrap: wrap;
+
 	overflow-x:hidden;
 	overflow-y:scroll;
 }
@@ -585,18 +583,11 @@ div:hover>.hoverable
 /*#sectionLeftExtra{position:absolute;left:0px;top:0px;}*/
 #sectionMiddle
 {
-	position:relative;
-	left:30%;
-	top:720px
-
-
-	right:318px;
-
-	min-width:100px;
-	display: flex;
-	justify-content: center;
-	align-items: center
-	display: inline-block;
+  flex: 1; /* 中间部分占据剩余空间 */
+  padding: 16px; /* 内边距 */
+  margin-right: 15px; /* 右外边距 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  background: rgba(0, 255, 0, 0.5); /* 临时背景颜色 */
 }
 #centerArea
 {
